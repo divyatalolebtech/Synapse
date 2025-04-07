@@ -1,0 +1,292 @@
+[
+  {
+    "title": "Introduction to Domain Models",
+    "description": "This course is a continuation of the Introduction to Software Development and Applications course. In this course, you will dive further into exploring software engineering techniques and their application to real-world business problems. Students who take this course will be equipped with practical design and programming techniques for the purpose of modeling significant business applications quickly. \n\nIn this course you will learn about constructing domain models. You will also refine your skills to employ systems thinking, the object-oriented paradigm, the visual programming technique, as well as productivity tools to put together complicated, powerful designs. We will practice simple and smart ways of making software programming enjoyable.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/introduction-to-domain-models",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Introduction to AutoSAR",
+    "description": "This course covers every aspect of automotive software development, including the principles of AutoSAR, more complex AutoSAR ideas, non-AutoSAR use cases, and in-depth ECU abstraction development. You will examine the foundational software of AutoSAR, comprehend the subtleties of runnable, and develop knowledge of interfaces, connectors, and composition. Additionally, you will learn about real-time environments (RTE), such as sender-receiver, client-server, and communication RTE, and gain practical experience in planning events inside the RTE framework. The course also covers non-AutoSAR applications and goes beyond AutoSAR, concentrating on the Microcontroller Abstraction Layer (MCAL), ARXML configuration, and efficient project setup. \n\nBy the end of the course, you will have a variety of abilities in automotive software development and be well-equipped to handle challenging automotive software projects, whether inside or outside the AutoSAR framework.\n\nThis course is helpful for:\n\n1) Engineers who work in creating automotive software, vehicle electronics, and systems engineering and wish to learn more about AUTOSAR and its use should take this course.\n\n2) Software developers who want to embrace AUTOSAR-compliant development practices are responsible for developing software applications and components for automotive systems.\n\n3) Engineers working on embedded systems in automobiles who want to include AUTOSAR principles into their work.\n\n4) Systems Architects: Experts in the design and architecture of automotive systems interested in implementing AUTOSAR-compliant plans.\n\nTo be successful in this course, you should have a background in programming skills, software engineering, embedded systems, and the fundamentals of automotive technology.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "system_design"
+    ],
+    "url": "https://www.coursera.org/learn/introduction-to-autosar",
+    "cost": 49.99,
+    "duration_hours": 3.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Java Programming: Arrays, Lists, and Structured Data",
+    "description": "Build on the software engineering skills you learned in “Java Programming: Solving Problems with Software” by learning new data structures. Use these data structures to build more complex programs that use Java’s object-oriented features. At the end of the course you will write an encryption program and a program to break your encryption algorithm.\n\nAfter completing this course, you will be able to:\n1. Read and write data from/to files;\n2. Solve problems involving data files;\n3. Perform quantitative analyses of data (e.g., finding maximums, minimums, averages); \n4. Store and manipulate data in an array or ArrayList;\n5. Combine multiple classes to solve larger problems;\n6. Use iterables and collections (including maps) in Java.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "algorithm_knowledge",
+      "security"
+    ],
+    "url": "https://www.coursera.org/learn/java-programming-arrays-lists-data",
+    "cost": 49.99,
+    "duration_hours": 4.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "JavaScript Programming Essentials",
+    "description": "JavaScript has become the most popular programming language amongst software developers.  This JavaScript essentials course is designed for anyone interested in a software engineering career as a web, mobile, front-end, back-end or full stack developer. \n\nYou’ll start with JavaScript basics, covering fundamental concepts and ECMAScript 6 features. You’ll also explore key data structures, including arrays, DOM, AJAX, and effective debugging techniques. \n\nNext, you will focus on honing your error handling and DOM manipulation skills. You’ll explore handling errors and exceptions in JavaScript, become proficient in working with functions and events, apply string manipulation techniques, and learn to traverse and manipulate the DOM to create dynamic web pages.\n\nYou’ll use JavaScript functions, tools, and libraries to create and style navigation and pages and utilize AJAX to fetch and display data from APIs. \n\nThroughout this course, we will provide step-by-step instructional guidance through videos followed by hands-on labs to practice what you learn. You will also complete a final project to showcase your newly acquired JavaScript programming skills and build a dynamic website. \n\nThis course is for JavaScript beginners and assumes a basic working knowledge of HTML, CSS and Git.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "algorithm_knowledge",
+      "debugging"
+    ],
+    "url": "https://www.coursera.org/learn/javascript-programming-essentials",
+    "cost": 49.99,
+    "duration_hours": 5.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Python Programming Fundamentals",
+    "description": "This introductory course is designed for beginners and individuals with limited programming experience who want to embark on their software development or data science journey using Python. Throughout the course, learners will gain a solid understanding of algorithmic thinking, Python syntax, code testing, debugging techniques, and modular code development--essential skills for a successful career in software engineering, development, or data science. \n\nBy the end of this course, you will learn to:\n\n- Gain a stepwise approach to problem-solving using algorithms and programming logic.\n- Apply common functions, conditional statements, and loops to build Python scripts and programs.\n- Work with the VS Code programming environment to enhance coding proficiency.\n- Use testing and debugging strategies to ensure code reliability.\n- Perform logical and mathematical operations on datasets.\n\nIn the final week of the course you will apply your new algorithm design and programming skills to a data analysis problem: analyzing heart rate data.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "algorithm_knowledge",
+      "testing_qa",
+      "debugging"
+    ],
+    "url": "https://www.coursera.org/learn/python-programming-fundamentals",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Open Source Programming - Master's",
+    "description": "Contemporary open-source programming languages and frameworks are presented in this course. Students will consider design and development topics in system, graphical user interface, network, and web programming. Dynamic scripting languages are covered using object-oriented, concurrent, and functional programming paradigms. Concepts gained throughout the course are reinforced with numerous exercises which will culminate in an open-source programming project.  \n\nAs a great learning experience, Python is a versatile and widely used programming language that can be used for a wide range of applications, including data science, machine learning, web development, and more. Learning Python can lead to many career benefits, including increased job opportunities, higher salaries, and the ability to work on exciting and innovative projects. Additionally, adding online courses and certifications to a resume can demonstrate a commitment to professional development and a willingness to learn new skills!\n\nRequired Textbook:  Starting Out with Python: 5th Edition, Tony Gaddis                                        \n\nSoftware Requirements: Python, Visual Studio Code\n\nTo truly excel in this course and get the most out of it, a solid foundation in several areas is key. Familiarity with computer and peripheral hardware, including their components and functions, will definitely help. Understanding the basics of computer networking, mobile computing, and cloud computing will also provide a strong base. Additionally, a comfortable grasp of Python programming is crucial for success in this course. But don't worry if you're not quite there yet! To help you build the necessary skills, we highly recommend checking out our Performance Based Admission courses, which cover the fundamental topics mentioned above. Additionally, if you need some Python practice, consider taking our Introduction to Open-Source Application Development course. These prior courses will equip you with the essential knowledge and set you up for success in this exciting material.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "devops"
+    ],
+    "url": "https://www.coursera.org/learn/illinois-tech-open-source-programming-mit",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Prompt Engineering with GPT: Programming for Custom Content",
+    "description": "Ever wondered how we can use AI in programing to make our workloads easier? In this 2-hour long project-based course, you will master the art of prompt engineering to design an educational tool using the capabilities of OpenAI's GPT-3 language model. You will be creating a multiple-choice quiz generator using Python and GPT-3. You will write a Python script from scratch that is able to generate a custom multiple-choice exam, capable of dynamically adjusting the topic, number of questions, and number of potential answers. To successfully navigate this project, you should have a basic understanding of Python programming, functions, variable assignments, and experience working with APIs.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/rudi-hinds-prompt-engineering-with-chatgpt-api-generate-exam-questions",
+    "cost": 49.99,
+    "duration_hours": 2.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Programming Mobile Applications for Android Handheld Systems: Part 1",
+    "description": "This course introduces you to the design and implementation of Android applications for mobile devices. You will develop an app from scratch, assuming a basic knowledge of Java, and learn how to set up Android Studio, work with various Activities and create simple user interfaces to make your apps run smoothly.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/android-programming",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Team Software Engineering with AI",
+    "description": "In this course, you'll elevate your software development skills by learning how to leverage AI in collaborative team environments. You'll discover how to use large language models (LLMs) to streamline testing processes, create comprehensive documentation, and manage complex dependencies.\n\nBy the end of this course, you will be able to:\n\n- Utilize LLMs to generate and implement various types of software tests, from exploratory to security testing\n- Create clear, useful documentation that follows best practices and language-specific conventions\n- Use AI to explore and manage software dependencies, including resolving conflicts and addressing security issues\n- Debug common dependency-related problems with AI as your pair-programmer\n\nThese skills will enhance your ability to work effectively in development teams, improve code quality, and streamline the software development lifecycle. By learning AI-assisted collaboration techniques, you'll become a more valuable asset to any development team and be better prepared to tackle complex, real-world software engineering challenges.",
+    "platform": "Coursera",
+    "skills": [
+      "communication",
+      "debugging",
+      "security",
+      "coding_proficiency",
+      "testing_qa"
+    ],
+    "url": "https://www.coursera.org/learn/team-software-engineering-with-ai",
+    "cost": 49.99,
+    "duration_hours": 3.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Java Programming: Principles of Software Design",
+    "description": "Solve real world problems with Java using multiple classes. Learn how to create programming solutions that scale using Java interfaces. Recognize that software engineering is more than writing code - it also involves logical thinking and design. By the end of this course you will have written a program that analyzes and sorts earthquake data, and developed a predictive text generator.\n\nAfter completing this course, you will be able to:\n1. Use sorting appropriately in solving problems;\n2. Develop classes that implement the Comparable interface;\n3. Use timing data to analyze empirical performance;\n4. Break problems into multiple classes, each with their own methods;\n5. Determine if a class from the Java API can be used in solving a particular problem;\n6. Implement programming solutions using multiple approaches and recognize tradeoffs;\n7. Use object-oriented concepts including interfaces and abstract classes when developing programs;\n8. Appropriately hide implementation decisions so they are not visible in public methods; and\n9. Recognize the limitations of algorithms and Java programs in solving problems.\n10. Recognize standard Java classes and idioms including exception-handling, static methods, java.net, and java.io packages.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "algorithm_knowledge"
+    ],
+    "url": "https://www.coursera.org/learn/java-programming-design-principles",
+    "cost": 49.99,
+    "duration_hours": 4.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Functional Programming Principles in Scala",
+    "description": "Functional programming is becoming increasingly widespread in industry. This trend is driven by the adoption of Scala as the main programming language for many applications. Scala fuses functional and object-oriented programming in a practical package. It interoperates seamlessly with both Java and Javascript. Scala is the implementation language of many important frameworks, including Apache Spark, Kafka, and Akka. It provides the core infrastructure for sites such as Twitter, Netflix, Zalando, and also Coursera.\n\nIn this course, you will discover the elements of the functional programming style and learn how to apply them usefully in your daily programming tasks, such as modeling business domains or implementing business logic. You will also develop a solid foundation for reasoning about functional programs, by touching upon proofs of invariants and the tracing of execution symbolically.\n\nThe course is hands-on; most units introduce short programs that serve as illustrations of important concepts and invite you to play with them, modifying and improving them. The course is complemented by a series of programming projects as homework assignments.\n\nRecommended background: You should have at least one year of programming experience. Proficiency with Java or C# is ideal, but experience with other languages such as C/C++, Python, Javascript, or Ruby is also sufficient. You should have some background in mathematics (e.g., algebra, logic, proof by induction). Last, you should have some familiarity with using the command line.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "devops"
+    ],
+    "url": "https://www.coursera.org/learn/scala-functional-programming",
+    "cost": 49.99,
+    "duration_hours": 5.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Software Engineering: Software Design and Project Management",
+    "description": "Software Development Life Cycle (SDLC) is the process of developing software through planning, requirement analysis, design, implementation, testing, and maintenance. This course focuses on the project planning and analysis/design phases of SDLC, and you will learn about different architectural patterns and design patterns to solve common problems in software design. It covers project planning, scheduling, and cost estimating, which are the principal tasks of software project managers.\n\nBasic object-oriented programming (OOP) concepts are required to understand different design patterns covered in this course. System design is driven by the UML models derived from requirement analysis. It is recommended to take the course \"Software Engineering: Modeling Software Systems using UML\" before attempting this course, but it is not a hard requirement.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "testing_qa",
+      "debugging",
+      "system_design"
+    ],
+    "url": "https://www.coursera.org/learn/software-engineering-software-design-and-project-management",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Software Engineering: Implementation and Testing",
+    "description": "Software Development Life Cycle (SDLC) is the process of developing software through planning, requirement analysis, design, implementation, testing, and maintenance. This course focuses on the implementation and testing phases of SDLC, and you will examine different software development processes for large software systems development, and understand the strengths (pros) and weaknesses (cons) of different software development processes. You will also encounter defensive programming techniques to prevent software bugs during implementation, and learn how to test your system thoroughly using different types of test cases.\n\nBasic object-oriented programming (OOP) concepts are required for topics covered in defensive programming and object-oriented testing. Implementation is driven by the UML models derived from requirement analysis. It is recommended to take the course \"Software Engineering: Modeling Software Systems using UML\" before attempting this course, but it is not a hard requirement.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "testing_qa",
+      "debugging"
+    ],
+    "url": "https://www.coursera.org/learn/software-engineering-implementation-and-testing",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Visual Basic Programming: Inheritance and Polymorphism",
+    "description": "This course is the third course in a series that aims to prepare you for a role working as a programmer. In this course, you will be introduced to the four main concepts in programming: Advanced String Operations and Dates, Modeling Classes, Development of Classes and Collections.  Labs will allow the students to apply the material in the lectures in simple computer programs designed to re-enforce the material in the lesson.  Learners will need to have a local machine with any one of the following operating systems; Windows 7 SP1 or higher, macOS 10.1.13 or higher, or almost any version of Linux from the last several years.  The learner will either need to download the free community edition of Visual Studio or the open source .NET Core installation.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/visual-basic-inheritance-polymorphism",
+    "cost": 49.99,
+    "duration_hours": 4.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Object Oriented Programming in Java",
+    "description": "Welcome to our course on Object Oriented Programming in Java using data visualization. People come to this course with many different goals -- and we are really excited to work with all of you! Some of you want to be professional software developers, others want to improve your programming skills to implement that cool personal project that you’ve been thinking about, while others of you might not yet know why you’re here and are trying to figure out what this course is all about.\n\nThis is an intermediate Java course. We recommend this course to learners who have previous experience in software development or a background in computer science.  Our goal is that by the end of this course each and every one of you feels empowered to create a Java program that’s more advanced than any you have created in the past and that is personally interesting to you. In achieving this goal you will also learn the fundamentals of Object Oriented Programming, how to leverage the power of existing libraries, how to build graphical user interfaces, and how to use some core algorithms for searching and sorting data. And this course is project-based, so we’ll dive right into the project immediately!\n\nWe are excited to be offering a unique course structure, designed to support learners of different backgrounds in succeeding at their own pace. The first module explains how this will work and if this course is right for you. We also recommend taking a few minutes to explore the course site. A good place to start is the navigation bar on the left. Click Course Content to see what material we’ll cover each week, as well preview the assignments you’ll need to complete to pass the course. Click Discussions to see forums where you can discuss the course material with fellow students taking the class. Be sure to introduce yourself to everyone in the Meet and Greet forum.\n\nThis course should take about 6 weeks to complete. You can check out the recommended course schedule below to see a quick overview of the lessons and assignments you’ll complete each week.\n\nWe’re excited you’re here learning with us. Let’s get started!",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "algorithm_knowledge"
+    ],
+    "url": "https://www.coursera.org/learn/object-oriented-java",
+    "cost": 49.99,
+    "duration_hours": 6.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Software Engineering: Modeling Software Systems using UML",
+    "description": "Software Development Life Cycle (SDLC) is the process of developing software through planning, requirement analysis, design, implementation, testing, and maintenance. This course focuses on the requirement analysis phase of SDLC, and you will learn how to use UML models to capture the system requirements and to facilitate communication between client/users and developers. UML is a general purpose visual modeling language for systems. It can be used to highlight different aspects of the system that are of interest to different stakeholders. Data requirements are captured in the domain model, which describes the important concepts of the application domain as classes, associations between them and constraints on them. Functional requirements are captured in the use-case model to describe the interactions between the system and its environment (users, other systems).\n\nUML incorporates the current best practices in Object-Oriented modeling techniques. Basic object-oriented programming (OOP) concepts are required to attempt the course. It is recommended to take the courses in the order they are listed, as they progressively develop techniques and concepts about software engineering, but it is not a hard requirement.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "testing_qa",
+      "debugging"
+    ],
+    "url": "https://www.coursera.org/learn/software-engineering-modeling-software-systems-using-uml",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Introduction to Software Engineering",
+    "description": "Are you curious about the lucrative field that is software engineering and how you might be a part of it? This is the course for you! By taking this course you will gain foundational knowledge of software development, programming, and the many exciting job roles and career paths that the IT industry offers. \n\nLearn about the power of the Software Development Lifecycle (SDLC), and modern software development frameworks methodologies like Agile and Scrum. Explore fundamental programming principles and foundations of design, architecture, and deployment. The course offers a number of labs that will help you get important hands-on experience. These include, getting started with an IDE, basics of programming in Python, and Hello World in 10 languages.  \n\nThe field of software engineering is growing at an estimated rate of 22% according to the US Bureau of Labor and Statistics. In addition to aspiring software engineers, front-end, back-end, full stack developers and DevOps professionals, this course is also suitable for those in related careers such as Product and Project Managers, IT Managers, Information Developers, UI/UX designers and others who communicate and interact with software engineers.   \n\nYou will learn about the different job opportunities and possible career paths in the software engineering field and also hear from industry professionals about what they do on a day-to-day basis.  \n\nProfessionals in the software engineering field are in great demand and now is a great time to learn more about this exciting domain. Start by enrolling now!",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "devops",
+      "system_design"
+    ],
+    "url": "https://www.coursera.org/learn/introduction-to-software-engineering",
+    "cost": 49.99,
+    "duration_hours": 6.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Learn Object-Oriented Programming with PHP",
+    "description": "Learn Object-Oriented Programming with PHP.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/oop-with-php",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Python Project: Software Engineering and Image Manipulation",
+    "description": "This course will walk you through a hands-on project suitable for a portfolio. You will be introduced to third-party APIs and will be shown how to manipulate images using the Python imaging library (pillow), how to apply optical character recognition to images to recognize text (tesseract and pytesseract). By the end of the course you will have worked with these different libraries available for Python 3 to create a real-world project.\n\nThe course is best-suited for learners who have taken the first four courses of the Python 3 Programming Specialization. Learners who already have Python programming skills but want to practice with a hands-on, real-world project can also benefit from this course.\n\nThis is the fifth and final course in the Python 3 Programming Specialization.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/python-project",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Mastering the Software Engineering Interview",
+    "description": "You’ve hit a major milestone as a computer scientist and are becoming a capable programmer. You now know how to solve problems, write algorithms, and analyze solutions; and you have a wealth of tools (like data structures) at your disposal.  You may now be ready for an internship or (possibly) an entry-level software engineering job.  But can you land the internship/job?  It depends in part on how well you can solve new technical problems and communicate during interviews.  How can you get better at this?  Practice!  \n\nWith the support of Google’s recruiting and engineering teams we’ve provided tips, examples, and practice opportunities in this course that may help you with a number of tech companies.  We’ll assist you to organize into teams to practice.  Lastly, we’ll give you basic job search advice, and tips for succeeding once you’re on the job.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency",
+      "algorithm_knowledge"
+    ],
+    "url": "https://www.coursera.org/learn/cs-tech-interview",
+    "cost": 49.99,
+    "duration_hours": 4.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Code Yourself! An Introduction to Programming",
+    "description": "Have you ever wished you knew how to program, but had no idea where to start from? This course will teach you how to program in Scratch, an easy to use visual programming language. More importantly, it will introduce you to the fundamental principles of computing and it will help you think like a software engineer.\n\nThis course is also available with captions in the following languages:\n\nArabic\nhttps://www.coursera.org/learn/intro-programming-ar\n\nSpanish\nhttps://www.coursera.org/learn/a-programar",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/intro-programming",
+    "cost": 49.99,
+    "duration_hours": 10.0,
+    "relevance_score": 0
+  },
+  {
+    "title": "Object-Oriented Programming in Python",
+    "description": "In this project, you will gain hands-on experience working with classes in Python to model real-world objects and systems. By the end, you will be able to utilize key object-oriented programming principles like inheritance and polymorphism.\n\nWe will build an interactive boxing match simulation using Python classes to represent different fighters. You will learn how to define class attributes, instantiate object instances, and customize behaviors through methods. The concepts covered translate to building all types of apps.",
+    "platform": "Coursera",
+    "skills": [
+      "coding_proficiency"
+    ],
+    "url": "https://www.coursera.org/learn/object-oriented-programming-in-python",
+    "cost": 49.99,
+    "duration_hours": 2.0,
+    "relevance_score": 0
+  }
+]

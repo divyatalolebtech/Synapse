@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Learning Resources</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#007AFF',secondary:'#34C759'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1E1E1E;
+            color: #FFFFFF;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #007AFF;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        input[type="range"]::-webkit-slider-runnable-track {
+            height: 6px;
+            background: #333333;
+            border-radius: 4px;
+        }
+        .custom-checkbox {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #2C2C2C;
+            border-radius: 4px;
+            border: 1px solid #3A3A3A;
+        }
+        .custom-checkbox:hover input ~ .checkmark {
+            background-color: #333333;
+        }
+        .custom-checkbox input:checked ~ .checkmark {
+            background-color: #007AFF;
+            border-color: #007AFF;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .custom-checkbox input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .custom-checkbox .checkmark:after {
+            left: 7px;
+            top: 3px;
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .card-skeleton {
+            background: linear-gradient(90deg, #2C2C2C 25%, #333333 50%, #2C2C2C 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-[#252525] border-b border-[#333333] fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="/">
+                    <img src="/static/images/logo.png" alt="Synapse" class="h-8" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 pt-24 pb-16">
+        <!-- Page Title & Context -->
+        <div class="max-w-4xl mx-auto mb-12 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-white">Recommended Learning Resources</h1>
+            <p class="text-[#B0B0B0] text-lg max-w-2xl mx-auto">
+                Based on your assessment results, we've curated personalized learning resources to help you improve in your identified skill gap areas.
+            </p>
+        </div>
+
+        <!-- Skill Gaps Overview -->
+        <div class="max-w-4xl mx-auto mb-12">
+            <h2 class="text-xl font-semibold mb-4 text-white">Your Skill Gap Areas</h2>
+            <div class="flex flex-wrap gap-3" id="skill-gaps">
+                <!-- Skill gaps will be populated here -->
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-full px-4 py-2 text-sm font-medium text-[#B0B0B0] card-skeleton w-32 h-10"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-full px-4 py-2 text-sm font-medium text-[#B0B0B0] card-skeleton w-40 h-10"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-full px-4 py-2 text-sm font-medium text-[#B0B0B0] card-skeleton w-36 h-10"></div>
+            </div>
+        </div>
+
+        <!-- Course Recommendations Grid -->
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-xl font-semibold mb-6 text-white">Recommended Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="recommendations-grid">
+                <!-- Course cards will be populated here -->
+                <!-- Skeleton loaders -->
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-lg overflow-hidden card-skeleton h-96"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-lg overflow-hidden card-skeleton h-96"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-lg overflow-hidden card-skeleton h-96"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-lg overflow-hidden card-skeleton h-96"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-lg overflow-hidden card-skeleton h-96"></div>
+                <div class="bg-[#2C2C2C] border border-[#3A3A3A] rounded-lg overflow-hidden card-skeleton h-96"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', path='js/recommendations.js') }}"></script>
+</body>
+</html>

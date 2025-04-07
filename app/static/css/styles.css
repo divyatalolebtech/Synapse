@@ -1,0 +1,91 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    background-color: #2C2C2C;
+    border: 1px solid #333;
+    margin-bottom: 0.5rem;
+}
+
+.custom-radio:hover {
+    background-color: #333;
+    border-color: #444;
+    transform: translateY(-1px);
+}
+
+.custom-radio-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s;
+}
+
+.custom-radio-input::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s;
+    background-color: #007AFF;
+}
+
+.custom-radio-input:checked::before {
+    transform: scale(1);
+}
+
+.custom-radio-input:checked {
+    border-color: #007AFF;
+    background-color: rgba(0, 122, 255, 0.1);
+}
+
+.custom-radio:focus-within {
+    border-color: #007AFF;
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+}
+.code-editor {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #E5E7EB;
+    line-height: 1.5;
+    overflow-x: auto;
+    white-space: pre;
+}
+.code-editor .keyword {
+    color: #FF79C6;
+}
+.code-editor .function {
+    color: #50FA7B;
+}
+.code-editor .string {
+    color: #F1FA8C;
+}
+.code-editor .comment {
+    color: #6272A4;
+}
+.code-editor .number {
+    color: #BD93F9;
+}
