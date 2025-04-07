@@ -1,4 +1,4 @@
-# Tech Industry Competency Assessment Engine
+#AI-Driven Skill Assessment and Personalized Learning Recommendations
 
 A sophisticated assessment and learning recommendation system that evaluates technical competencies and suggests personalized Coursera courses based on skill gaps.
 
