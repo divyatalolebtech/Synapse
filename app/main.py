@@ -16,7 +16,8 @@ from app.schemas.assessment import (
     Response,
     AssessmentResult,
     DimensionScore,
-    Progress
+    Progress,
+    QuestionSummary
 )
 from app.services.question_bank import QuestionBankManager
 from app.services.adaptive_engine import AdaptiveEngine
@@ -192,13 +193,39 @@ async def get_results(session_id: str, db: Session = Depends(get_db)):
                 level=get_competency_level(score)
             ))
         
+        # Get questions with responses
+        questions_summary = []
+        for response in responses:
+            question = db.query(QuestionModel).filter(QuestionModel.id == response.question_id).first()
+            if question:
+                # Convert options from string to dict if needed
+                options = question.options
+                if isinstance(options, str):
+                    try:
+                        import json
+                        options = json.loads(options)
+                    except:
+                        options = {}
+                
+                summary = QuestionSummary(
+                    question_text=question.text,
+                    options=options,
+                    selected=response.response,
+                    is_correct=response.is_correct,
+                    skill_dimension=question.skill_dimension
+                )
+                if response.is_correct:
+                    summary.correct = question.correct_answer
+                questions_summary.append(summary)
+
         return AssessmentResult(
             session_id=session_id,
             role=session.role,
             overall_score=overall_score,
             dimension_scores=dimension_scores,
             end_time=session.end_time,
-            status=session.status
+            status=session.status,
+            questions=questions_summary
         )
         
     except Exception as e:
