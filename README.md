@@ -92,3 +92,11 @@ A sophisticated assessment and learning recommendation system that evaluates tec
 ├── requirements.txt                  # Project dependencies
 └── README.md                        # Documentation
 ```
+
+##Personalized Course Recommendations
+Based on assessment results, the system recommends targeted Coursera courses.
+![Screenshot 2025-04-10 011922](https://github.com/user-attachments/assets/a0e1c92e-aafe-46d0-86b7-f03533c100c3)
+
+##User Dashboard
+Here's how the user interface looks once the assessment is completed.
+![Screenshot 2025-04-07 022528](https://github.com/user-attachments/assets/a61d4b84-a599-4419-95bf-135ecc6d6fb4)
