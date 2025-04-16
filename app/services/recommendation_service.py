@@ -1,9 +1,6 @@
 from typing import List, Dict
-import numpy as np
 import logging
 from sqlalchemy.orm import Session
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
 from app.models.learning_resource import LearningResource
 
 # Configure logging
@@ -12,7 +9,6 @@ logger = logging.getLogger(__name__)
 
 class RecommendationService:
     def __init__(self):
-        self.model = SentenceTransformer("all-MiniLM-L6-v2")
         # Initialize skill keywords mapping to our assessment dimensions
         self.skill_keywords = {
             "algorithm_knowledge": ["algorithms", "data structures", "complexity", "problem solving"],
@@ -41,83 +37,57 @@ class RecommendationService:
         db: Session,
         weak_skills: List[str],
         limit: int = 6,
-        role: str = None  # Add role parameter to prevent error
+        role: str = None
     ) -> List[Dict]:
-        """Get course recommendations based on semantic similarity"""
+        """Get course recommendations based on skill matching"""
         try:
             logger.info(f"Starting recommendation process for {len(weak_skills)} weak skills")
-            logger.debug(f"Weak skills: {weak_skills}")
             
             if role:
                 logger.info(f"Generating recommendations for role: {role}")
                 
             if not weak_skills:
-                logger.warning("No weak skills provided, recommendations may be less relevant")
-                weak_skills = ["general programming"]  # Fallback
+                logger.warning("No weak skills provided, using default skills")
+                weak_skills = list(self.skill_keywords.keys())
             
-            # Join weak skills into a single text query
-            query_text = " ".join(weak_skills)
-            logger.debug(f"Generated query text: {query_text}")
+            # Get all resources
+            resources = db.query(LearningResource).all()
+            logger.info(f"Found {len(resources)} resources")
             
-            # Generate query embedding
-            try:
-                query_embedding = self.model.encode(query_text).reshape(1, -1)
-                logger.info(f"Generated query embedding of shape {query_embedding.shape}")
-            except Exception as e:
-                logger.error(f"Failed to generate query embedding: {e}")
-                raise
-
-            # Get all resources with embeddings
-            try:
-                resources = db.query(LearningResource).filter(LearningResource.embedding != None).all()
-                logger.info(f"Found {len(resources)} resources with embeddings")
-                
-                if not resources:
-                    logger.warning("No learning resources found in database")
-                    return []
-                    
-            except Exception as e:
-                logger.error(f"Database query failed: {e}")
-                raise
+            if not resources:
+                logger.warning("No learning resources found in database")
+                return []
             
-            # Score each resource using cosine similarity
+            # Score resources based on skill keyword matches
             scored = []
-            error_count = 0
-            
             for resource in resources:
-                if not resource.embedding:
-                    continue
-                    
-                try:
-                    resource_embedding = np.array(resource.embedding).reshape(1, -1)
-                    score = cosine_similarity(query_embedding, resource_embedding)[0][0]
+                score = 0
+                description = (resource.description or "").lower()
+                title = (resource.title or "").lower()
+                
+                # Check for skill keyword matches
+                for skill in weak_skills:
+                    keywords = self.skill_keywords.get(skill, [])
+                    for keyword in keywords:
+                        if keyword in description or keyword in title:
+                            score += 1
+                
+                if score > 0:
                     scored.append((score, resource))
-                    logger.debug(f"Scored '{resource.title}': {score:.4f}")
-                except Exception as e:
-                    error_count += 1
-                    logger.error(f"Failed to score resource '{resource.title}': {e}")
-                    continue
-
-            if error_count:
-                logger.warning(f"Failed to score {error_count} resources")
-
-            # Sort by similarity score (highest first)
+            
+            # Sort by match score (highest first)
             scored.sort(key=lambda x: x[0], reverse=True)
-            logger.info(f"Sorted {len(scored)} resources by relevance score")
             
             # Return top N with relevance scores
             recommendations = [
                 {
                     **resource.to_dict(),
-                    "relevance_score": round(score * 100, 2)
+                    "relevance_score": round((score / len(weak_skills)) * 100, 2)
                 }
                 for score, resource in scored[:limit]
             ]
             
             logger.info(f"Returning top {len(recommendations)} recommendations")
-            logger.debug("Recommendations: %s", 
-                        [(r['title'], r['relevance_score']) for r in recommendations])
-            
             return recommendations
             
         except Exception as e:
