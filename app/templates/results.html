@@ -50,6 +50,17 @@
                 <div class="bg-[#2C2C2C] rounded-lg p-6">
                     <h3 class="text-lg font-semibold mb-4">Skill Dimensions</h3>
                     <div id="skillDimensions" class="space-y-4"></div>
+
+                    <div class="mt-8">
+                        <button onclick="toggleSummary()" class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-button">
+                            View Question Summary
+                        </button>
+                    </div>
+
+                    <div id="questionSummarySection" class="hidden mt-6">
+                        <h3 class="text-lg font-semibold mb-4">Question-wise Summary</h3>
+                        <div id="questionSummary" class="space-y-4"></div>
+                    </div>
                 </div>
             </div>
             
@@ -152,13 +163,53 @@
                             .split('_')
                             .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
                             .join(' ')}</span>
-                        <span class="text-sm font-medium">${skill.level}</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm font-medium">${skill.level}</span>
+                            <span class="text-xs text-[#B0B0B0]">(${Math.round(skill.score)}%)</span>
+                        </div>
                     </div>
                     <div class="w-full bg-[#333333] rounded-full h-2">
                         <div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: ${skill.score}%"></div>
                     </div>
                 </div>
             `).join('');
+        }
+
+        function toggleSummary() {
+            const section = document.getElementById("questionSummarySection");
+            section.classList.toggle("hidden");
+        }
+
+        // Render question summary without showing correct answer if wrong
+        function renderQuestionSummary(questions) {
+            const container = document.getElementById('questionSummary');
+            container.innerHTML = questions.map(q => {
+                let resultNote = '';
+                if (q.is_correct) {
+                    resultNote = `<span class="text-green-400 font-semibold ml-2">✅ Correct</span>`;
+                } else {
+                    resultNote = `<span class="text-red-400 font-semibold ml-2">❌ Incorrect</span>`;
+                }
+
+                return `
+                    <div class="border border-[#3A3A3A] rounded-lg p-4">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="bg-[#3A3A3A] text-[#B0B0B0] text-xs px-2 py-1 rounded">
+                                ${q.skill_dimension.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                            </span>
+                        </div>
+                        <div class="mb-2 font-medium">${q.question_text}</div>
+                        <div class="text-sm text-[#B0B0B0] mb-1">
+                            <strong>Your Answer:</strong> ${q.options[q.selected] || q.selected} ${resultNote}
+                        </div>
+                        ${q.is_correct ? `
+                        <div class="text-sm text-green-400">
+                            <strong>Correct Answer:</strong> ${q.options[q.correct]}
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
         }
 
         // Function to load and display results
@@ -185,6 +236,11 @@
 
                 updateSkillDimensions(resultsData.dimension_scores);
                 initializeRadarChart(resultsData.dimension_scores);
+                
+                // Render question summary if questions data is available
+                if (resultsData.questions) {
+                    renderQuestionSummary(resultsData.questions);
+                }
                 
             } catch (error) {
                 console.error('Error loading results:', error);
