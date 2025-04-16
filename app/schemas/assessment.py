@@ -45,6 +45,14 @@ class Response(BaseModel):
     timestamp: datetime
     next_question_available: bool = True
 
+class QuestionSummary(BaseModel):
+    question_text: str
+    options: Dict[str, str]
+    selected: str
+    is_correct: bool
+    correct: Optional[str] = None  # Only included when is_correct is True
+    skill_dimension: str
+
 class AssessmentResult(BaseModel):
     session_id: str
     role: str
@@ -52,3 +60,4 @@ class AssessmentResult(BaseModel):
     dimension_scores: List[DimensionScore]
     end_time: datetime
     status: str
+    questions: List[QuestionSummary]
